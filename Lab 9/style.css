@@ -1,0 +1,111 @@
+:root{
+  --body-bg-color: #d4d4d4;
+  --header-text-color: #fff;
+  --hover-color: #eeeeee;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  background-color: var(--body-bg-color);
+}
+
+
+header{
+  margin: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #100f5e;
+}
+header h1, li{
+  margin: 0;
+  font: bold 30pt Calibri;
+  color: var(--header-text-color);
+}
+header a{
+  margin-left: 15px;
+  text-decoration: none;
+  border-top: 3px solid transparent;
+  color: var(--hover-color);
+  border-radius: 1px;
+  transition: all 0.2s linear;
+}
+
+
+main{
+  margin: 0 15px;
+  padding: 10px 20px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font: 20pt Calibri;
+}
+main p{
+  margin: 15px 0;
+}
+main > img{
+  max-width: 70%;
+  max-height: 80%;
+  margin: 20px;
+}
+
+
+
+
+
+
+.menu-cities {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.active {
+  color: #ffae00;
+}
+
+.slider-wrap {
+  width: 750px;
+  overflow: hidden;
+}
+
+img {
+  width: 750px;
+  cursor: pointer;
+  transition: transform 0.25s linear;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(6*100%);
+  background-color: white;
+  transition: transform 0.5s;
+}
+
+nav > ul > li {
+  margin-right: 10px;
+  padding-left: 40px;
+  background: url('./img/cornflower.png') no-repeat 0 10px;
+  background-size: 30px;
+}
+
+nav > ul > li:hover {
+  color: #ababab;
+}
+
+.active:hover {
+  color: #d88c00;
+}

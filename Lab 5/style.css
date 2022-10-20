@@ -1,0 +1,81 @@
+:root{
+  --body-bg-color: #d4d4d4;
+  --header-text-color: #fff;
+  --hover-color: #eeeeee;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  background-color: var(--body-bg-color);
+}
+
+
+header{
+  margin: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #100f5e;
+}
+header h1, a{
+  margin: 0;
+  font: bold 30pt Calibri;
+  color: var(--header-text-color);
+}
+header a{
+  margin-left: 15px;
+  text-decoration: none;
+  border-top: 3px solid transparent;
+  color: var(--hover-color);
+  border-radius: 1px;
+  transition: all 0.2s linear;
+}
+.menu-hover{
+  border-color: var(--hover-color);
+  color: var(--hover-color);
+}
+
+
+main{
+  margin: 0 15px;
+  padding: 10px 20px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font: 20pt Calibri;
+}
+main p{
+  margin: 15px 0;
+}
+main div.images{
+  width: 100%;
+  height: 55vh;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+img{
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #3d3d3d;
+}
+main > img{
+  max-width: 70%;
+  max-height: 80%;
+  margin: 20px;
+}
+.images > img{
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+

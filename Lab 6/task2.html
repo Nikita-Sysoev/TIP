@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 6 - Task 2</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>NS - Lab 6</h1>
+    </div>
+    <div>
+      <a href="./task1.html">Task 1</a>
+      <a href="./task2.html">Task 2</a>
+    </div>
+  </header>
+
+  <main class="task2">
+    <p><strong>Задание: </strong>оздайте массив. Заполните его случайными значениями от А до В. Значения А, В и размер массива вводятся на форме. Напишите функцию filt, которая принимает функцию-предикат и массив. Возвращает она массив значений, для которых предикат вернет true.</p>
+    
+    <table>
+      <tr>
+        <td><label for="A">Начало интервала</label></td>
+        <td><input type="number" name="A" id="A" value="0"></td>
+      </tr>
+      <tr>
+        <td><label for="B">Конец интервала</label></td>
+        <td><input type="number" name="B" id="B" value="0"></td>
+      </tr>
+      <tr>
+        <td><label for="size">Размер массива</label></td>
+        <td><input type="number" name="size" id="size" value="0"></td>
+      </tr>
+      <tr>
+        <td><label for="arr">Исходный массив</label></td>
+        <td><input type="text" name="input" id="input" readonly></td>
+      </tr>
+      <tr>
+        <td><label for="array">Полученный массив</label></td>
+        <td><input type="text" name="array" id="array" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Выполнить" onclick="Task2()"></td>
+      </tr>
+    </table>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+:root{
+  --body-bg-color: #d4d4d4;
+  --header-text-color: #fff;
+  --hover-color: #ffbb00;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-bg-color);
+}
+
+
+
+header{
+  margin: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #100f5e;
+}
+header h1, a{
+  margin: 0;
+  font: bold 30pt Calibri;
+  color: var(--header-text-color);
+}
+header a{
+  margin-left: 15px;
+  text-decoration: none;
+}
+header a:hover{
+  color: var(--hover-color);
+}
+
+
+
+main{
+  flex: auto;
+  margin: 0 15px;
+  padding: 0px 15px;
+  background-color: #fff;
+  font: 20pt Calibri;
+}
+main.task1{
+  display: flex;
+}
+main p{
+  margin: 15px 0;
+}
+main.task1 div{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main.task1 div h1{
+  margin: 0;
+  padding: 5px 40px;
+  font: bold 80pt Calibri;
+  color: #707070;
+  border: 10px solid #707070;
+  border-radius: 50px;
+}
+main.task1 div h1:hover{
+  color: var(--hover-color);
+  border-color:  var(--hover-color);
+  cursor: pointer;
+}
+main.task2 table{
+  border: none;
+}
+main.task2 table tr td{
+  padding: 5px 0;
+}
+main.task2 table tr td:nth-child(2){
+  padding-left: 10px;
+}
+main.task2 table label{
+  font-weight: bold;
+}
+main.task2 input{
+  padding: 5px;
+  font: 16pt Calibri;
+  border: 2px solid #929292;
+  border-radius: 5px;
+}
+main.task2 input[type="number"]{
+  width: 60px;
+}
+main.task2 input[type="submit"]{
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  border-color: #007000;
+  border-radius: 5px;
+  background-color: #01b10a;
+}
+main.task2 input[type="submit"]:hover{
+  border-color: #00d400;
+  background-color: #01e70d;
+  cursor: pointer;
+}

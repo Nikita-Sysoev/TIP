@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 3 - Task 1</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>NS - Lab 3</h1>
+    </div>
+    <div>
+      <a href="./task1.html">Task 1</a>
+      <a href="./task2.html">Task 2</a>
+    </div>
+  </header>
+
+  <main>
+    <p><strong>Задание: </strong>на плоскости заданы координаты трех точек. Напишите сценарий,
+      который вычисляет площадь треугольника.</p>
+
+    <div>
+      <strong>[<label for="x1Coordinate">X1</label> , <label for="y1Coordinate">Y1</label>]</strong>
+      <input type="number" name="x1Coordinate" id="x1Coordinate" value="0" onchange="Task1();">
+      <input type="number" name="y1Coordinate" id="y1Coordinate" value="0" onchange="Task1();">
+    </div>
+
+    <div>
+      <strong>[<label for="x2Coordinate">X2</label> , <label for="y2Coordinate">Y2</label>]</strong>
+      <input type="number" name="x2Coordinate" id="x2Coordinate" value="0" onchange="Task1();">
+      <input type="number" name="y2Coordinate" id="y2Coordinate" value="0" onchange="Task1();">
+    </div>
+
+    <div>
+      <strong>[<label for="x3Coordinate">X3</label> , <label for="y3Coordinate">Y3</label>]</strong>
+      <input type="number" name="x3Coordinate" id="x3Coordinate" value="0" onchange="Task1();">
+      <input type="number" name="y3Coordinate" id="y3Coordinate" value="0" onchange="Task1();">
+    </div>
+
+    <p><strong>Ответ:</strong> <span id="ansver"></span></p>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
