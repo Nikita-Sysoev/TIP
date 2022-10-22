@@ -29,23 +29,6 @@ class Employee {
   }
 }
 
-let Employes = [
-  new Employee('Employee-1', new Date()),
-  new Employee('Employee-2', new Date()),
-  new Employee('Employee-3', new Date()),
-  new Employee('Employee-4', new Date()),
-  new Employee('Employee-5', new Date()),
-  new Employee('Employee-6', new Date()),
-  new Employee('Employee-7', new Date())
-];
-
-function AddEmployee(){
-  let surname = document.querySelector('#surname').value;
-  let date = new Date(document.querySelector('#date').value);
-  Employes.push(new Employee(surname, date));
-  document.querySelector('#surname').value = '';
-}
-
 function Tasks(){
   switch (Number(document.querySelector('input[name="instruction"]:checked').value)){
     case 1: Task1(); break;
@@ -54,6 +37,23 @@ function Tasks(){
     case 4: Task4(); break;
     default: alert('WTF?');
   }
+}
+
+let Employes = [];
+
+for(let i = 0; i < localStorage.length; i++) {
+  let key = localStorage.key(i);
+  if (key != 'LS_W_ON_PAGE'){
+    Employes.push(new Employee(key, new Date(localStorage.getItem(key))));
+  }
+}
+
+function AddEmployee(){
+  let surname = document.querySelector('#surname').value;
+  let date = new Date(document.querySelector('#date').value);
+  localStorage.setItem(surname, date);
+  Employes.push(new Employee(surname, date));
+  document.querySelector('#surname').value = '';
 }
 
 function Task1(){

@@ -1,7 +1,8 @@
 $(function () {
-  $("#my_links li a").css('color', 'red');
-  $("#my_links li a[href^='documents']").css({'font-style': 'italic', 'font-size': '24px'});
-  $("td").css({'border': '8px solid black', 'padding': '10px','font-size': '64px'});
+  $("#my_links li a").css('color', 'blue');
+  $("#my_links li a[href^='documents']").css({'color': 'darkorange'});
+
+  $("td").css({'border': '3px solid gray', 'padding': '10px','font-size': '20pt'});
   $("table").css({'border-collapse': 'collapse'});
   $("table#moto_table tr:nth-child(even) > td:last-child").css({'background-color': 'red','color': 'white'});
 });
